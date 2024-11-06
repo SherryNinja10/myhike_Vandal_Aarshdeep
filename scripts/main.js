@@ -68,7 +68,7 @@ function readQuote(day) {
     var hikesRef = db.collection("hikes");
 
     hikesRef.add({
-        code: "BBY01",
+        code: "hike1",
         name: "Burnaby Lake Park Trail", //replace with your own city?
         city: "Burnaby",
         province: "BC",
@@ -81,7 +81,7 @@ function readQuote(day) {
         last_updated: firebase.firestore.FieldValue.serverTimestamp()  //current system time
     });
     hikesRef.add({
-        code: "AM01",
+        code: "hike2",
         name: "Buntzen Lake Trail", //replace with your own city?
         city: "Anmore",
         province: "BC",
@@ -94,7 +94,7 @@ function readQuote(day) {
         last_updated: firebase.firestore.Timestamp.fromDate(new Date("March 10, 2022"))
     });
     hikesRef.add({
-        code: "NV01",
+        code: "hike3",
         name: "Mount Seymour Trail", //replace with your own city?
         city: "North Vancouver",
         province: "BC",
