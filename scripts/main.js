@@ -154,6 +154,7 @@ function displayCardsDynamically(collection) {
 				var hikeCode = doc.data().code;    //get unique ID to each hike to be used for fetching right image
                 var docID = doc.id;
                 var hikeLength = doc.data().length; //gets the length field
+                
                 let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
 
                 //update title and text and image
